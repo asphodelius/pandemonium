@@ -1007,9 +1007,9 @@ a.button.button--secondary {
 
 .logo-link {
   display: flex;
-  align-items: center; /* Vertically center the logo and text */
+  align-items: center;
 }
 
 .logo {
-  margin-right: 20px; /* Adjust the margin to control the indentation to the right */
+  margin-right: 20px;
 }

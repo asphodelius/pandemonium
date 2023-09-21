@@ -1,3 +1,35 @@
+const playerCountElement = document.getElementById("player-count");
+const serverStatusElement = document.getElementById("server-status");
+
+function updateServerInfo() {
+  fetch("https://api.mcsrvstat.us/3/65.108.21.145:25629")
+    .then((response) => response.json())
+    .then((data) => {
+      const playerCount = data.players.online;
+      const serverStatus = data.online ? "Online" : "Offline";
+
+      playerCountElement.textContent = `Игроков онлайн: ${playerCount}`;
+
+      serverStatusElement.textContent = `Статус сервера: ${serverStatus}`;
+
+      if (data.online) {
+        serverStatusElement.classList.remove("offline");
+        serverStatusElement.classList.add("online");
+      } else {
+        serverStatusElement.classList.remove("online");
+        serverStatusElement.classList.add("offline");
+      }
+    })
+    .catch((error) => {
+      console.error("Error fetching server info:", error);
+      playerCountElement.textContent = "Error fetching server info";
+      serverStatusElement.textContent = "Error fetching server info";
+    });
+}
+
+updateServerInfo();
+setInterval(updateServerInfo, 5000);
+
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.querySelector(".button--secondary");
 
@@ -5,13 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const originalText = button.innerText;
     const copiedText = "Скопировано";
 
-    // Simulate copying to clipboard (you may use your own clipboard library)
-    // Here, I'm just changing the button text to "Скопировано" for demonstration purposes.
     button.innerText = copiedText;
 
-    // Reset the button text after a certain time (e.g., 3 seconds)
     setTimeout(function () {
       button.innerText = originalText;
-    }, 3000); // You can adjust the delay as needed
+    }, 3000);
   });
 });

@@ -1013,3 +1013,20 @@ a.button.button--secondary {
 .logo {
   margin-right: 20px;
 }
+
+.button.button--third {
+  font-weight: 500;
+  background-color: #310564;
+}
+
+.button.button--fourth {
+  font-weight: 500;
+}
+
+.button.button--fourth.online {
+  background-color: green;
+}
+
+.button.button--fourth.offline {
+  background-color: red;
+}

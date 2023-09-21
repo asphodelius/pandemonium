@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Metadata & Embeds -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/images/favicon/p180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon/p32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/images/favicon/p16.png"
+    />
+
+    <meta content="#ffffff" data-react-helmet="true" name="theme-color" />
+    <meta property="og:image" content="/assets/images/logo.png" />
+
+    <title>Pandemonium</title>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/rawline" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="assets/index.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav class="navbar">
+        <div class="navbar__container">
+          <div class="navbar__branding">
+            <a href="index.html">
+				<img class="logo" src="assets/images/minecraft_title (1).png" alt="" height="40">
+              <span>Pandemonium</span>
+            </a>
+          </div>
+          <div class="navbar__items navbar__items--mobile">
+            <a href="index.html#" class="navbar__item">
+              <label for="input-navbar">
+                <i class="fas fa-bars"></i>
+              </label>
+            </a>
+          </div>
+          <input type="checkbox" id="input-navbar" style="display: none" />
+          <div class="navbar__items">
+            <a href="list.html" class="navbar__item">СПИСОК МОДИФИКАЦИЙ</a>
+            <a
+              href="download.html"
+              class="navbar__item navbar__item--highlighted"
+              >Установить</a
+            >
+          </div>
+        </div>
+      </nav>
+      <main class="main">
+        <div class="main__container">
+          <section class="section section--hero">
+            <div class="clouds"></div>
+            <div class="section__container">
+              <div
+                class="section__image"
+                style="--image-url: url('/assets/images/menu.png')"
+              >
+                <!-- <img src="assets/images/menu.png"> -->
+              </div>
+              <div class="section__content">
+                <img
+                  class="title"
+                  src="/assets/images/minecraft (2).png"
+                  alt="title"
+                />
+                <p class="section__subheading">Новое начало</p>
+                <div class="section__buttons">
+                  <a
+                    href="download.html"
+                    class="button button--primary"
+                    >Установить</a
+                  >
+				  <a class="button button--secondary" data-clipboard-text="pandemonium.20tps.ru" data-toggle="tooltip" title="Click to copy">pandemonium.20tps.ru</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div>
+            <section class="section section--about" id="section-about">
+              <div class="section__container">
+                <div class="section__content">
+                  <h2 class="section__heading">О сервере</h2>
+                  <p class="section__description">
+                    Здесь голос становится вашим могущественным союзником в
+                    создании уникальных приключений и незабываемых моментов.
+                    Разрушайте и творите свои миры вместе с нами, исследуйте
+                    неизведанные уголки, завоевывайте вершины и вместе с
+                    друзьями или новыми союзниками создайте неповторимые
+                    истории, оставляя след в истории нашего удивительного
+                    сервера.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section class="section section--feature section--feature--alt">
+              <div class="section__container">
+                <div
+                  class="section__image"
+                  style="--image-url: url('/assets/images/splash.jpg')"
+                ></div>
+                <div class="section__content">
+                  <h2 class="section__heading">
+                    Полная свобода
+                  </h2>
+                  <p class="section__description">
+					На нашем сервере нет жестких правил о враждебности или миролюбии, поэтому выбор остается за вами. 	
+					Играя у нас, вы вольны выбирать свой собственный путь и создавать уникальные истории в этом увлекательном мире.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section class="section section--feature">
+              <div class="section__container">
+                <div
+                  class="section__image"
+                  style="--image-url: url('/assets/images/air.png')"
+                ></div>
+                <div class="section__content">
+                  <h2 class="section__heading">Модификации</h2>
+                  <p class="section__description">
+					У нас установлены моды, добавляющие небольшое количество новых блоков, оружий и управляемых самолетов, что позволяет игрокам сражаться с монстрами или другими игроками на расстояние или в воздухе.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section class="section section--feature section--feature--alt">
+              <div class="section__container">
+                <div
+                  class="section__image"
+                  style="--image-url: url('/assets/images/voice-min.png')"
+                ></div>
+                <div class="section__content">
+                  <h2 class="section__heading">Голосовой чат</h2>
+                  <p class="section__description">
+                   <a href="https://modrinth.com/plugin/simple-voice-chat">Simple Voice Chat</a> Голосовой чат с объемным звучанием, который придает игровому опыту новую глубину и реализм. 
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section class="section section--feature">
+              <div class="section__container">
+                <div
+                  class="section__image"
+                  style="--image-url: url('/assets/images/emote.png')"
+                ></div>
+                <div class="section__content">
+                  <h2 class="section__heading">Эмоции</h2>
+				  <p class="section__description">
+					На сервере есть дополнительные анимации, возможные благодаря моду <a href="https://modrinth.com/mod/emotecraft">Emotecraft</a>, которые придают вашему персонажу больше оживлённости. Только не упадите случайно в лаву как <span class="gradient-text">Катион</span>.
+				  </p>
+                </div>
+              </div>
+            </section>
+			<section class="section section--feature section--feature--alt">
+				<div class="section__container">
+				  <div
+					class="section__image"
+					style="--image-url: url('/assets/images/terralith.png')"
+				  ></div>
+				  <div class="section__content">
+					<h2 class="section__heading">Уникальная генерация</h2>
+					<p class="section__description">
+						Исследуй новые биомы и загадочные пещеры, которые <a href="https://www.stardustlabs.net/terralith">Terralith</a> добавляет в мир, и открой для себя уникальные ландшафты и секреты под землей, не беспокоясь о возможных конфликтах с ванильными игроками.
+					</p>
+				  </div>
+				</div>
+			  </section>
+			
+            
+            <section class="section section--download" id="section-download">
+              <div class="section__container">
+                <div class="section__content">
+                  <h2 class="section__heading">Как начать играть</h2>
+
+                  </p>
+                  <div class="section__buttons">
+                    <a href="download.html" class="button button--primary"
+                      >Инструкция</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="footer__container">
+          <div class="footer__content">
+            <div class="footer__copyright">
+              © asphodelius
+            </div>
+          </div>
+          <div class="footer__icons">
+            <a href="https://github.com/asphodelius" class="footer__icon">
+              <i class="fab fa-github fa-fw"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <!-- Link to the JavaScript file -->
+    <script src="/js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+    <script type="text/javascript">
+      new ClipboardJS(".button");
+    </script>
+  </body>
+</html>

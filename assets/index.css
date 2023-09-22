@@ -129,8 +129,6 @@ body {
   }
 }
 
-
-
 .navbar__items--mobile .navbar__item {
   font-size: 1.1rem;
   cursor: default;
@@ -1029,6 +1027,7 @@ a.button.button--secondary {
   background-color: green;
 }
 
-.button.button--fourth.offline {
+.offline {
   background-color: red;
+  color: white;
 }

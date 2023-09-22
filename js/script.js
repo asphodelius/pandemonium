@@ -18,12 +18,14 @@ function updateServerInfo() {
       } else {
         serverStatusElement.classList.remove("online");
         serverStatusElement.classList.add("offline");
+        serverStatusElement.classList.add("red");
       }
     })
     .catch((error) => {
       console.error("Error fetching server info:", error);
       playerCountElement.textContent = "Игроков онлайн: 0";
-      serverStatusElement.textContent = "Статус сервера: offline";
+      serverStatusElement.textContent = "Статус сервера: Offline";
+      serverStatusElement.classList.add("red");
     });
 }
 

@@ -22,8 +22,8 @@ function updateServerInfo() {
     })
     .catch((error) => {
       console.error("Error fetching server info:", error);
-      playerCountElement.textContent = "Error fetching server info";
-      serverStatusElement.textContent = "Error fetching server info";
+      playerCountElement.textContent = "Игроков онлайн: 0";
+      serverStatusElement.textContent = "Статус сервера: offline";
     });
 }
 
